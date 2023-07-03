@@ -34,7 +34,7 @@ async function skipNetflixAndPrime() {
       }
 
       if (extraWait) {
-        await sleep(1200);
+        await sleep(1800);
       }
 
       await setInnerText(domNode, type, LOADING_TEXT);

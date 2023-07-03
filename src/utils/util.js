@@ -44,12 +44,12 @@ export function getInnerText(domNode, type) {
 export async function setInnerText(domNode, type, text) {
   if (type === NETFLIX && domNode.firstElementChild) {
     domNode.firstElementChild.innerText = text;
-    await sleep(250);
+    await sleep(500);
     return;
   }
 
   domNode.innerText = text;
-  await sleep(500);
+  await sleep(750);
 }
 
 function getLocaleForPrime() {
