@@ -31,7 +31,8 @@
         "*://*.netflix.sg/*",
         "*://*.netflix.sk/*",
         "*://*.netflix.es/*",
-        "https://*.primevideo.com/*",
+        "*://*.primevideo.com/*",
+        "*://primevideo.com/*",
         "*://*.amazon.com/*",
         "*://amazon.com/*",
         "*://*.amazon.co.uk/*",
@@ -527,7 +528,9 @@
         "*://*.amazon.zw/*",
         "*://amazon.zw/*",
         "*://*.canalplus.com/*",
-        "*://canalplus.com/*"
+        "*://canalplus.com/*",
+        "*://*.disneyplus.com/*",
+        "*://www.disneyplus.com/*"
       ],
       "js": ["dist/bundle_new.js"],
       "run_at": "document_end",

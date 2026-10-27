@@ -7,6 +7,7 @@ import {
   NETFLIX,
   PRIME,
   CANAL,
+  DISNEY
 } from "./utils/i18n";
 
 const locale = memoizedLocale("locale");
@@ -48,6 +49,16 @@ export const elementMapping = [
     locale,
   },
   {
+    type: DISNEY,
+    selector: ".skip__button",
+    locale,
+  },
+  {
+    type: DISNEY,
+    selector: "[data-testid='up-next-play-button']",
+    locale,
+  },
+  {
     type: PRIME,
     selector: ".skipElement",
     locale,
@@ -63,12 +74,24 @@ export const elementMapping = [
     selector: ".nextUpCard",
     locale,
   },
+  // {
+  //   type: PRIME,
+  //   skipEvent: SKIP_INTRO,
+  //   selector: `//*[text()="${translateLocale(SKIP_INTRO).translatedText}"]`,
+  //   xpath: true,
+  //   ...translateLocale(SKIP_INTRO),
+  // },
   {
     type: PRIME,
-    skipEvent: SKIP_INTRO,
-    selector: `//*[text()="${translateLocale(SKIP_INTRO).translatedText}"]`,
-    xpath: true,
-    ...translateLocale(SKIP_INTRO),
+    selector: ".atvwebplayersdk-skipelement-button",
+    locale,
+    extraWait: true,
+  },
+  {
+    type: PRIME,
+    selector: "[aria-label='Skip Intro']",
+    locale,
+    extraWait: true,
   },
   {
     type: PRIME,

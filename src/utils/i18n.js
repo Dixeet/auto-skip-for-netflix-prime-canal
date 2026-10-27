@@ -8,6 +8,7 @@ export const LOADING_TEXT = "Skipping...";
 export const NETFLIX = "netflix";
 export const PRIME = "prime";
 export const CANAL = 'canal';
+export const DISNEY = 'disney';
 
 export const i18nMap = {
   en_US: {

@@ -17,7 +17,7 @@ async function skipNetflixAndPrime() {
     try {
       skipButton = fetchDomNode(elementMapping);
     } catch (err) {
-      errorTrack(err, "FETCH_DOM_NODE");
+      console.error(err);
     }
 
     if (!skipButton) {
